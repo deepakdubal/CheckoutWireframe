@@ -1,0 +1,45 @@
+﻿
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, img, ul, li, figure, canvas, video, th, td, tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+   
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana,Tahoma,Arial,'Segoe UI';
+    font-size: 13px;
+    color: #808080;
+    background: #f6f6f6 none repeat scroll 0 0;
+}
+.sp {
+    background-image: url("../images/sprite-image.png");
+    background-repeat: no-repeat;
+}
+.fl {
+float:left;
+}
+.fr {
+float:right;
+}
+.cb {
+clear:both;
+}
+.ContainerWrapper {
+      margin: 0 auto;
+    padding: 0;
+    width: 1230px;
+}
+
+.MainContainer {
+    margin-top: 25px;
+    padding: 16px 0;
+    position: relative;
+}
+
+.Shipping {
+
+}

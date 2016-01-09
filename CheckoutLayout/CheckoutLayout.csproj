@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="Checkout.html" />
     <Content Include="css\StyleSheet.css" />
+    <Content Include="images\Checkout-Sprite.png" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -73,6 +74,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

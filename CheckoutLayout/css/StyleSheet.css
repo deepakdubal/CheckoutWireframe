@@ -15,8 +15,12 @@ body {
     color: #808080;
     background: #f6f6f6 none repeat scroll 0 0;
 }
+.rp {
+    background-image: url("../images/rupee-sprite.png");
+    background-repeat: no-repeat;
+}
 .sp {
-    background-image: url("../images/sprite-image.png");
+     background-image: url("../images/Checkout-Sprite.png");
     background-repeat: no-repeat;
 }
 .fl {
@@ -28,18 +32,307 @@ float:right;
 .cb {
 clear:both;
 }
-.ContainerWrapper {
-      margin: 0 auto;
+
+#ContainerWrapper {
+    margin: 0 auto;
     padding: 0;
-    width: 1230px;
+    width: 100%;
 }
 
-.MainContainer {
+#MainContainer {
     margin-top: 25px;
-    padding: 16px 0;
     position: relative;
+    width: 100%;
+    float:left;
+}
+.box {
+    width:30%;
+    float:left;
+    min-height:300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px #ccc;
+    margin:0 0 2% 2%;
+     padding-bottom: 20px;
+    
+}
+.sdHead {
+   box-shadow: 0 0 2px #ccc;
+    float: left;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+    width: 50%;
+    background-color: #f9f9f9;
+    color:#000000;
+     text-transform:uppercase;
+}
+.w100 {
+  width: 100%;
+  text-align:left;
+  background-color:#fff;
+}
+.tabSel {
+    box-shadow: 0 0 0 #ccc;
+     background-color: #FFF;
+     color: #cd853f;
 }
 
-.Shipping {
+.sdcont {
+float:left;
+width:100%;
+}
+.sdControlscont {
+width:90%;
+ margin:0 auto;
+}
+    .sdcont .row {
+     float:left;
+     width:100%;
+     position:relative;
+    }
+    .sdcont .Errrow {
+        background: rgba(217, 19, 20, 0.5) none repeat scroll 0 0;
+        border: 1px solid #EC8989;
+        color: #000000;
+        display: none;
+        float: left;
+        font-size: 85%;
+        padding: 2%;
+        width: 96%;
+        position:relative;
+    }
 
+    .arrow-down {
+   border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    border-top: 8px solid #ffffff;
+    bottom: -13px;
+    display: block;
+    height: 0;
+    left: 25px;
+    position: absolute;
+    top: -2px;
+    width: 0;
+  }
+
+        .arrow-up {
+   border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    border-bottom: 8px solid #ffffff;
+    bottom: -13px;
+    display: block;
+    height: 0;
+    left: 25px;
+    position: absolute;
+    top: -2px;
+    width: 0;
+  }
+    .sdcont .spw {
+      float:left;
+      width:50%;
+    }
+    .sdcont .spw input{
+          padding: 6% 4% 6% 21%;
+    width: 73%;
+      }
+    .gap20px {
+     float:left;
+     width:100%;
+     height:20px;
+    }
+    .gap10px {
+     float:left;
+     width:100%;
+     height:20px;
+    }
+
+input[type="text"], input[type="password"], select, textarea {
+    border: 1px solid #cecece;
+    color: #575757;
+    float: left;
+    padding: 3% 0 3% 11%;
+    width: 88%;
+}
+
+select {
+    padding: 3% 2% 3% 8%;
+    width: 100%;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border: 1px solid #000!important;
+    box-shadow: 0 0 9px #e6e6e6;
+}
+
+.rtb {
+    border-top: 1px solid #fff!important;
+}
+
+.sccwh {
+width:18%!important;
+}
+.smwh {
+    border-left: 1px solid #ffffff !important;
+    width: 58% !important;
+}
+.icon {
+    padding: 0 8px;
+    position: absolute;
+    left: 2%;
+    top: 33%;
+}
+.mail {
+background-position: -8px -8px;  
+}
+.Name {
+    background-position: -32px -8px;
+}
+.Pin {
+    background-position: -53px -8px;
+    padding: 2px 8px;
+    left: 3.5%;
+}
+.City {
+     background-position: -74px -8px;
+    padding: 2px 8px;
+}
+
+.Add {
+     background-position: -97px -8px;
+    padding: 2px 8px;
+}
+.itemrp {
+  background-position: -75px 0;
+    padding: 0 5px;
+}
+.diffrowCont {
+ width:90%;
+ padding:2% 5%;
+   margin:10px auto;
+    
+}
+.diffrow {
+  background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 3px #cccccc;
+    color: #000000;
+    float: left;
+    padding: 10px 0;
+    width: 99%;
+    font-weight:bold;
+}
+
+.productlist {
+ float:left;
+ padding:0;
+ margin:0;
+ list-style-type:none;
+}
+.productlist {
+ float:left;
+ padding:0;
+ margin:0;
+ list-style-type:none;
+  width:100%;
+  font-size:85%;
+}
+
+.productlist li{
+ float:left;
+ padding:0;
+ margin:0;
+ width:25%;
+ list-style-type:none;
+ text-align:center;
+ min-height: 70px;
+
+}
+.qtyContainer {
+    width:60px;
+    margin: 0 auto;
+}
+.qtyContainer div {
+    width:18px;
+    float:left;
+    text-align:center;
+}
+.plpn {
+   font-size:85% ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.qtybtn {
+    background-color:#f2f2f2;
+    border:solid 1px #f2f2f2;
+    cursor:pointer;
+}
+.plProName {
+text-align:left!important;
+}
+.qtyno {
+    border:solid 1px #f2f2f2;
+
+}
+
+.plimg {
+ width:22%!important;
+}
+.plProName {
+ width:38%!important;
+ text-align:left;
+}
+.plQty {
+     width:20%!important;
+}
+.plPrc {
+     width:20%!important;
+
+}
+    
+/*mobile styles*/
+@media only screen and (max-width:1000px) {
+    .box {
+        width:90%;
+        margin:0 0 4% 4%;
+    }
+       .plimg {
+         width:30%!important;
+        }
+        .plProName {
+            min-height: 32px !important;
+            text-align: left!important;
+            width: 70% !important;
+        }
+        .plQty {
+             width:35%!important;
+        }
+        .plPrc {
+             width:35%!important;
+
+        }
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+           .plimg {
+         width:30%!important;
+        }
+        .plProName {
+            min-height: 32px !important;
+            text-align: left!important;
+            width: 70% !important;
+        }
+        .plQty {
+             width:35%!important;
+        }
+        .plPrc {
+             width:35%!important;
+
+        }
+}
+
+/*desktop styles*/
+@media only screen and (min-width:769px) {
 }

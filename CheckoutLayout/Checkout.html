@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <link href="css/StyleSheet.css" rel="stylesheet" />
-   
+    <script src="js/jquery-1.11.1.js"></script>
+    <link href="css/StyleSheet.css" rel="stylesheet" />   
     <script src="js/JavaScript.js"></script>
 </head>
 <body>
@@ -267,11 +267,11 @@
                     <div class="gap20px"></div>
                     <div class="diffrowCont">
                     <div class="diffrow"><span>&nbsp;&nbsp;&nbsp;</span>
-                      <input type="checkbox" name="chkDiffBillAddress" id="chkDiffBillAddress" />&nbsp;Different Billing Address
+                      <input type="checkbox" name="chkDiffBillAddress" id="chkDiffBillAddress" onclick="$('#billDiv').toggle()" />&nbsp;Different Billing Address
                     </div>
                         </div>
                     <div class="gap20px"></div>
-                    <div class="sdControlscont">
+                    <div class="sdControlscont" style="display:none;" id="billDiv">
                     <div class="row"><span class="Name icon sp">&nbsp;</span><input name="txtBillName" id="txtBillName" placeholder="Full Name" maxlength="100" type="text" /></div>
                     <div class="Errrow" id="txtBillNameError"><p class="arrow-down"></p></div>
                     <div class="spw row"><span class="Pin icon sp">&nbsp;</span><input name="txtBillPINCode" id="txtBillPINCode" placeholder="PIN/ZIP Code" type="text" class="rtb" /></div>
@@ -524,32 +524,70 @@
             <div class="OrderSummery box">
                  <div class="sdHead w100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shopping Cart Summary</div>
                 <div class="gap20px"></div>
-                 <ul class="productlist">
-                     <li class="plimg"><img src="../images/1.jpg" width="80" height="80" title="The sky dawned in its New Apparel - 1, Painting by Ami Patel" alt="The sky dawned in its New Apparel - 1, Painting by Ami Patel "/> </li>
-                     <li class="plProName"><div class="plpn">The sky dawned in its New Apparel - 1, Painting by Ami Patel</div></li>
-                     <li class="plQty">
+                 <div class="productlist">
+                   <div class="proRow" id="34567">
+                     <div class="plimg pri"><img src="../images/1.jpg"  onload="rescaleImage(this,80,80);" title="The sky dawned in its New Apparel - 1, Painting by Ami Patel" alt="The sky dawned in its New Apparel - 1, Painting by Ami Patel "/> </div>
+                     <div class="plProName pri"><div class="plpn">The sky dawned in its New Apparel - 1, Painting by Ami Patel</div></div>
+                     <div class="plQty pri">
                          <div class="qtyContainer">
                            <div class="qtybtn">-</div><div class="qtyno">1</div><div class="qtybtn">+</div>
                          </div>
-                     </li>
-                     <li class="plPrc"><span class="itemrp rp"></span>50000</li>
-
-                    <li class="plimg"><img src="../images/2.jpg" height="80" title="The sky dawned in its New Apparel - 1, Painting by Ami Patel" alt="The sky dawned in its New Apparel - 1, Painting by Ami Patel "/> </li>
-                     <li class="plProName"><div class="plpn">The sky dawned in its New Apparel - 1, Painting by Ami Patel</div></li>
-                     <li class="plQty">
+                     </div>
+                     <div class="plPrc pri"><span class="itemrp rp"></span>50000</div>
+                    </div>
+         
+                   <div class="proRow" id="234234">
+                     <div class="plimg pri"><img src="../images/2.jpg"  onload="rescaleImage(this,80,80);" title="The sky dawned in its New Apparel - 1, Painting by Ami Patel" alt="The sky dawned in its New Apparel - 1, Painting by Ami Patel "/> </div>
+                     <div class="plProName pri"><div class="plpn">The sky dawned in its New Apparel - 1, Painting by Ami Patel</div></div>
+                     <div class="plQty pri">
                          <div class="qtyContainer">
                            <div class="qtybtn">-</div><div class="qtyno">1</div><div class="qtybtn">+</div>
                          </div>
-                     </li>
-                     <li class="plPrc"><span class="itemrp rp"></span>50000</li>
+                     </div>
+                     <div class="plPrc pri"><span class="itemrp rp"></span>50000</div>
+                    </div>
 
-                 </ul>
+                   <div class="proRow" id="345345">
+                     <div class="plimg pri"><img src="../images/3.jpg"  onload="rescaleImage(this,80,80);" title="The sky dawned in its New Apparel - 1, Painting by Ami Patel" alt="The sky dawned in its New Apparel - 1, Painting by Ami Patel "/> </div>
+                     <div class="plProName pri"><div class="plpn">The sky dawned in its New Apparel - 1, Painting by Ami Patel</div></div>
+                     <div class="plQty pri">
+                         <div class="qtyContainer">
+                           <div class="qtybtn">-</div><div class="qtyno">1</div><div class="qtybtn">+</div>
+                         </div>
+                     </div>
+                     <div class="plPrc pri"><span class="itemrp rp"></span>50000</div>
+                    </div>
+
+                   <div class="proRow" id="45656">
+                     <div class="plimg pri"><img src="../images/4.jpg"  onload="rescaleImage(this,80,80);" title="The sky dawned in its New Apparel - 1, Painting by Ami Patel" alt="The sky dawned in its New Apparel - 1, Painting by Ami Patel "/> </div>
+                     <div class="plProName pri"><div class="plpn">The sky dawned in its New Apparel - 1, Painting by Ami Patel</div></div>
+                     <div class="plQty pri">
+                         <div class="qtyContainer">
+                           <div class="qtybtn">-</div><div class="qtyno">1</div><div class="qtybtn">+</div>
+                         </div>
+                     </div>
+                     <div class="plPrc pri"><span class="itemrp rp"></span>50000</div>
+                    </div>
+
+                 </div>
+                <div class="subtotal">
+                    <div class="subtotalCon">
+                        <div class="sttext">SUBTOTAL</div>
+                        <div class="stprice"><span class="itemrp rp"></span>50000</div>
+                    </div>
+
+                </div>
             </div>
             <div class="Payment box">
                 <div class="sdHead w100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment methods</div>
+                <div class="gap20px"></div>
+                <div class="payMethod" id="CCDC"><span class="cc icon sp">&nbsp;</span>Credit/DebitCard</div>
+               <div class="payMethod" id="NetBank"><span class="Netb icon sp">&nbsp;</span>Net Banking</div>
+               <div class="payMethod" id="PayPal"><span class="Payp icon sp">&nbsp;</span>PayPal</div>    
             </div>
             <div class="Payment box">
               <div class="sdHead w100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Place Order</div>
+          
             </div>
         </div>
     </div>

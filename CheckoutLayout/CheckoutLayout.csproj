@@ -66,6 +66,7 @@
     <Content Include="images\Checkout-Sprite.png" />
     <Content Include="images\rupee-sprite.png" />
     <Content Include="js\JavaScript.js" />
+    <Content Include="js\jquery-1.11.1.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

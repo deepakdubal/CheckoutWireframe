@@ -223,27 +223,27 @@ background-position: -8px -8px;
     font-weight:bold;
 }
 
+
 .productlist {
  float:left;
  padding:0;
  margin:0;
- list-style-type:none;
-}
-.productlist {
- float:left;
- padding:0;
- margin:0;
- list-style-type:none;
   width:100%;
-  font-size:85%;
+ 
+}
+.proRow {
+  float:left;
+ padding:10px 0;
+ margin:0;
+  width:100%;
+  border-bottom:solid 1px #f2f2f2;
 }
 
-.productlist li{
+.pri{
  float:left;
  padding:0;
  margin:0;
  width:25%;
- list-style-type:none;
  text-align:center;
  min-height: 70px;
 
@@ -258,7 +258,7 @@ background-position: -8px -8px;
     text-align:center;
 }
 .plpn {
-   font-size:85% ;
+   
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -288,6 +288,57 @@ text-align:left!important;
 .plPrc {
      width:20%!important;
 
+}
+
+.subtotal {
+ float:left;
+ padding:0;
+ margin:0;
+ width:100%;
+
+}
+.payMethod {
+    background-color: #f2f2f2;
+    float: left;
+    font-size: 135%;
+    padding: 15px 0 15px 9%;
+    position: relative;
+    width: 91%;
+}
+.cc {
+ background-position: -270px -8px;
+    padding: 5px 15px;
+    top:30%;
+}
+.Netb {
+ background-position: -270px -8px;
+    padding: 5px 15px;
+    top:30%;
+}
+.Payp {
+ background-position: -377px -8px;
+    padding: 5px 15px;
+    top:30%;
+}
+.subtotal {
+float:left;
+width:100%;
+padding:15px 0;
+}
+.subtotalCon {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 90%;
+}
+.sttext {
+  float:left;
+    width:60%;
+    padding:15px 0;
+}
+.stprice {
+      float:left;
+    width:40%;
+    padding:15px 0;
 }
     
 /*mobile styles*/

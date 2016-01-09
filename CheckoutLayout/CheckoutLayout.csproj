@@ -59,7 +59,12 @@
   <ItemGroup>
     <Content Include="Checkout.html" />
     <Content Include="css\StyleSheet.css" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
     <Content Include="images\Checkout-Sprite.png" />
+    <Content Include="images\rupee-sprite.png" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>

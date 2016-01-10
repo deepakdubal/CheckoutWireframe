@@ -298,12 +298,12 @@ text-align:left!important;
 
 }
 .payMethod {
-    background-color: #f2f2f2;
+   background-color: #f2f2f2;
     float: left;
     font-size: 135%;
-    padding: 15px 0 15px 9%;
+    padding: 15px 0 15px 13%;
     position: relative;
-    width: 91%;
+    width: 87%;
 }
 .cc {
  background-position: -270px -8px;

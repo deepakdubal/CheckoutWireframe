@@ -21,5 +21,15 @@
         $(b).css('height', a);
         $(b).css('width', d)
     }
+
+
+}
+
+function ShowPaymentOption(id, cnt) {
+    $(".payMethodCon").hide();
+    $("#" + id + "Content").show();
+    $(".payMethod").css('backgroundColor', '#f2f2f2');
+    cnt.style.backgroundColor = "#FFF";
+
 }
 

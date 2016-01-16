@@ -46,13 +46,13 @@ clear:both;
     float:left;
 }
 .box {
-    width:30%;
+    width:32%;
     float:left;
     min-height:300px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 0 3px #ccc;
-    margin:0 0 2% 2%;
+    margin:0 0 2% 1%;
      padding-bottom: 20px;
     
 }
@@ -203,7 +203,7 @@ background-position: -8px -8px;
     padding: 2px 8px;
 }
 .itemrp {
-  background-position: -75px 0;
+  background-position: -34px 0;
     padding: 0 5px;
 }
 .diffrowCont {
@@ -297,13 +297,34 @@ text-align:left!important;
  width:100%;
 
 }
-.payMethod {
+.payMethod,.payMethodCon {
    background-color: #f2f2f2;
     float: left;
-    font-size: 135%;
+    font-size: 120%;
     padding: 15px 0 15px 13%;
     position: relative;
     width: 87%;
+    cursor:pointer;
+    border-bottom:solid 1px #fff;
+    color:#000;
+}
+.payMethod:hover {
+     background-color: #ccc!important;
+}
+.payMethodCon {
+ background-color: #fff;
+ font-size: 100%;
+ padding:0;
+ width: 100%;
+ display:none;
+
+}
+.pacotext {
+ font-size:85%;
+ font-style:italic;
+}
+.db {
+display:block;
 }
 .cc {
  background-position: -270px -8px;
@@ -323,22 +344,36 @@ text-align:left!important;
 .subtotal {
 float:left;
 width:100%;
-padding:15px 0;
+padding:0;
 }
 .subtotalCon {
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 15px 0 0;
     width: 90%;
+    color:#000;
 }
 .sttext {
   float:left;
     width:60%;
     padding:15px 0;
+   font-weight:bold; 
+    font-size:11px;
 }
 .stprice {
       float:left;
     width:40%;
     padding:15px 0;
+    font-size:11px;
+    text-align:right;
+    font-weight:bold;
+}
+.ccContent {
+display:none;
+}
+.npCont {
+    float:left;
+    width:100%;
+    border-top:solid: 
 }
     
 /*mobile styles*/
@@ -351,17 +386,23 @@ padding:15px 0;
          width:30%!important;
         }
         .plProName {
-            min-height: 32px !important;
+            min-height: 35px !important;
             text-align: left!important;
             width: 70% !important;
         }
         .plQty {
              width:35%!important;
+            
         }
         .plPrc {
              width:35%!important;
-
         }
+
+        .payMethod,.payMethodCon {
+    padding: 15px 0 15px 14%;
+    width: 86%;
+
+}
 
 }
 
@@ -371,15 +412,18 @@ padding:15px 0;
          width:30%!important;
         }
         .plProName {
-            min-height: 32px !important;
+            min-height: 35px !important;
             text-align: left!important;
             width: 70% !important;
+            font-size:88%!important;
         }
         .plQty {
              width:35%!important;
+              min-height: 35px !important;
         }
         .plPrc {
              width:35%!important;
+              min-height: 35px !important;
 
         }
 }
@@ -387,3 +431,5 @@ padding:15px 0;
 /*desktop styles*/
 @media only screen and (min-width:769px) {
 }
+
+

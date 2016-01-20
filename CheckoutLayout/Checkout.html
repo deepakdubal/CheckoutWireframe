@@ -20,16 +20,16 @@
                     <div class="gap10px"></div>
                     <div class="row"><span class="Name icon sp">&nbsp;</span><input name="txtShipName" id="txtShipName" placeholder="Full Name" maxlength="100" type="text" /></div>
                     <div class="Errrow" id="txtShipNameError"><p class="arrow-down"></p></div>
-                    <div class="spw row"><span class="Pin icon sp">&nbsp;</span><input name="txtShipPINCode" id="txtShipPINCode" placeholder="PIN/ZIP Code" type="text" class="rtb" /></div>
-                    <div class="spw row"><span class="City icon sp">&nbsp;</span><input name="txtShipCity" id="txtShipCity" placeholder="City" type="text" class="rtb" /></div>
+                    <div class="spw row"><span class="Pin icon sp">&nbsp;</span><input name="txtShipPINCode" id="txtShipPINCode" placeholder="PIN/ZIP Code" type="text"  /></div>
+                    <div class="spw row"><span class="City icon sp">&nbsp;</span><input name="txtShipCity" id="txtShipCity" placeholder="City" type="text"  /></div>
                     <div class="Errrow" id="txtShipPINCodeError"><p class="arrow-down"></p></div>
                     <div class="Errrow" id="txtShipCityError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddress" id="txtShipAddress" placeholder="Shipping Address" maxlength="100" type="text" class="rtb" /></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddress" id="txtShipAddress" placeholder="Shipping Address" maxlength="100" type="text"  /></div>
                     <div class="Errrow" id="txtShipAddressError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddressLandmark" id="txtShipAddressLandmark" placeholder="Address Lankmark" maxlength="100" type="text" class="rtb" /></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddressLandmark" id="txtShipAddressLandmark" placeholder="Address Lankmark" maxlength="100" type="text"  /></div>
                     <div class="Errrow" id="txtShipAddressLandmarkError"><p class="arrow-down"></p></div>
                     <div class="row">
-                       <select name="txtShipCountry" id="txtShipCountry" class="rtb" onchange="setCountryCode(this)">
+                       <select name="txtShipCountry" id="txtShipCountry"  onchange="setCountryCode(this)">
                             <option value="" selected="selected">Select Country</option>
                             <option value="AFG">Afghanistan</option>
                             <option value="ALB">Albania</option>
@@ -274,16 +274,16 @@
                     <div class="sdControlscont" style="display:none;" id="billDiv">
                     <div class="row"><span class="Name icon sp">&nbsp;</span><input name="txtBillName" id="txtBillName" placeholder="Full Name" maxlength="100" type="text" /></div>
                     <div class="Errrow" id="txtBillNameError"><p class="arrow-down"></p></div>
-                    <div class="spw row"><span class="Pin icon sp">&nbsp;</span><input name="txtBillPINCode" id="txtBillPINCode" placeholder="PIN/ZIP Code" type="text" class="rtb" /></div>
-                    <div class="spw row"><span class="City icon sp">&nbsp;</span><input name="txtBillCity" id="txtBillCity" placeholder="City" type="text" class="rtb" /></div>
+                    <div class="spw row"><span class="Pin icon sp">&nbsp;</span><input name="txtBillPINCode" id="txtBillPINCode" placeholder="PIN/ZIP Code" type="text"  /></div>
+                    <div class="spw row"><span class="City icon sp">&nbsp;</span><input name="txtBillCity" id="txtBillCity" placeholder="City" type="text"  /></div>
                     <div class="Errrow" id="txtBillPINCodeError"><p class="arrow-down"></p></div>
                     <div class="Errrow" id="txtBillCityError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddress" id="txtBillAddress" placeholder="Billing Address" maxlength="100" type="text" class="rtb" /></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddress" id="txtBillAddress" placeholder="Billing Address" maxlength="100" type="text"  /></div>
                     <div class="Errrow" id="txtBillAddressError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddressLandmark" id="txtBillAddressLandmark" placeholder="Address Lankmark" maxlength="100" type="text" class="rtb" /></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddressLandmark" id="txtBillAddressLandmark" placeholder="Address Lankmark" maxlength="100" type="text"  /></div>
                     <div class="Errrow" id="txtBillAddressLandmarkError"><p class="arrow-down"></p></div>
                     <div class="row">
-                       <select name="txtBillCountry" id="txtBillCountry" class="rtb" onchange="setCountryCode(this)">
+                       <select name="txtBillCountry" id="txtBillCountry"  onchange="setCountryCode(this)">
                             <option value="" selected="selected">Select Country</option>
                             <option value="AFG">Afghanistan</option>
                             <option value="ALB">Albania</option>
@@ -580,7 +580,7 @@
             </div>
             <div class="Payment box">
                 <div class="sdHead w100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment methods</div><div class="gap20px"></div>
-                <div class="payMethod" id="CC" onclick="ShowPaymentOption('CC',this)" style="background-color:white;"><span class="cc icon sp">&nbsp;</span>Credit Card</div>
+                <div class="payMethod poselc" id="CC" onclick="ShowPaymentOption('CC',this)"><span class="cc icon sp">&nbsp;</span>Credit Card</div>
                  <div class="payMethodCon db" id="CCContent">
                      <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>

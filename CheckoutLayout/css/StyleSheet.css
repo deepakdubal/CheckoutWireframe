@@ -153,6 +153,7 @@ input[type="text"], input[type="password"], select, textarea {
     float: left;
     padding: 3% 0 3% 11%;
     width: 88%;
+    margin:3px 0;
 }
 
 select {
@@ -163,10 +164,6 @@ select {
 input[type="text"]:focus, select:focus, textarea:focus {
     border: 1px solid #000!important;
     box-shadow: 0 0 9px #e6e6e6;
-}
-
-.rtb {
-    border-top: 1px solid #fff!important;
 }
 
 .sccwh {
@@ -380,11 +377,22 @@ display:none;
       background-color: orange;
     border: 2px solid orange;
     color: #000;
-    font-size: 17px;
+    font-size: 20px;
     margin: 0 auto;
-    padding: 10px 35%;
+    padding: 10px 0;
     cursor:pointer;
+    width:100%;
+    text-align:center;
 }
+.OrderSummery {
+width:64%;
+}
+.poselc {
+background-color:#FFF!important;
+}
+    .poselc:hover {
+        background-color:#FFF!important;
+    }
     
 /*mobile styles*/
 @media only screen and (max-width:1000px) {
@@ -402,17 +410,28 @@ display:none;
         }
         .plQty {
              width:35%!important;
+             min-height: 35px !important;
             
         }
         .plPrc {
              width:35%!important;
+             min-height: 35px !important;
         }
+    .plpn {
+     font-size:85%;
+    }
 
-        .payMethod,.payMethodCon {
-    padding: 15px 0 15px 14%;
-    width: 86%;
-
-}
+        .payMethod {
+            padding: 15px 0 15px 15%;
+            width: 85%;
+     }
+    .payMethodCon {
+        width: 86%;
+        float:none;
+        margin: 0 auto;
+        clear:both;
+    }
+           
 
 }
 

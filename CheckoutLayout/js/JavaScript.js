@@ -1,4 +1,9 @@
 ﻿function rescaleImage(b, f, c) {
+    if (screen.width > 1024)
+    {
+        f = 150;
+        c = 150;
+    }
     var a = b.height;
     var d = b.width;
     var g = a / d;
@@ -28,8 +33,10 @@
 function ShowPaymentOption(id, cnt) {
     $(".payMethodCon").hide();
     $("#" + id + "Content").show();
-    $(".payMethod").css('backgroundColor', '#f2f2f2');
-    cnt.style.backgroundColor = "#FFF";
+    //$(".payMethod").css('backgroundColor', '#f2f2f2');
+    //cnt.style.backgroundColor = "#FFF";
+    $(".payMethod").removeClass('poselc');
+    $(cnt).addClass('poselc');
 
 }
 

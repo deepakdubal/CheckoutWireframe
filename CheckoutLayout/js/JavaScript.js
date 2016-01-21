@@ -1,9 +1,9 @@
 ﻿function rescaleImage(b, f, c) {
-    if (screen.width > 1024)
-    {
-        f = 150;
-        c = 150;
-    }
+    //if (screen.width > 1024)
+    //{
+    //    f = 150;
+    //    c = 150;
+    //}
     var a = b.height;
     var d = b.width;
     var g = a / d;

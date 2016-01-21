@@ -10,7 +10,7 @@
     <div id="ContainerWrapper">
         <div id="MainContainer" >
             <div class="Shipping box">
-                <div class="tabSel sdHead" >Shipping Details</div>
+                <div class="tabSel sdHead">Shipping Details</div>
                 <div class="sdHead">Login</div>
                 <div class="gap20px"></div>
                 <div class="sdcont">
@@ -24,10 +24,10 @@
                     <div class="spw row"><span class="City icon sp">&nbsp;</span><input name="txtShipCity" id="txtShipCity" placeholder="City" type="text"  /></div>
                     <div class="Errrow" id="txtShipPINCodeError"><p class="arrow-down"></p></div>
                     <div class="Errrow" id="txtShipCityError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddress" id="txtShipAddress" placeholder="Shipping Address" maxlength="100" type="text"  /></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddressLine1" id="txtShipAddressLine1" placeholder="Shipping Address Line 1" maxlength="100" type="text"  /></div>
                     <div class="Errrow" id="txtShipAddressError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddressLandmark" id="txtShipAddressLandmark" placeholder="Address Lankmark" maxlength="100" type="text"  /></div>
-                    <div class="Errrow" id="txtShipAddressLandmarkError"><p class="arrow-down"></p></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtShipAddressLine2" id="txtShipAddressLine2" placeholder="Shipping Address Line 2" maxlength="100" type="text"  /></div>
+                    <div class="Errrow" id="txtShipAddressLine2Error"><p class="arrow-down"></p></div>
                     <div class="row">
                        <select name="txtShipCountry" id="txtShipCountry"  onchange="setCountryCode(this)">
                             <option value="" selected="selected">Select Country</option>
@@ -278,10 +278,10 @@
                     <div class="spw row"><span class="City icon sp">&nbsp;</span><input name="txtBillCity" id="txtBillCity" placeholder="City" type="text"  /></div>
                     <div class="Errrow" id="txtBillPINCodeError"><p class="arrow-down"></p></div>
                     <div class="Errrow" id="txtBillCityError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddress" id="txtBillAddress" placeholder="Billing Address" maxlength="100" type="text"  /></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddress" id="txtBillAddressLine1" placeholder="Billing Address Line 1" maxlength="100" type="text"  /></div>
                     <div class="Errrow" id="txtBillAddressError"><p class="arrow-down"></p></div>
-                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddressLandmark" id="txtBillAddressLandmark" placeholder="Address Lankmark" maxlength="100" type="text"  /></div>
-                    <div class="Errrow" id="txtBillAddressLandmarkError"><p class="arrow-down"></p></div>
+                    <div class="row"><span class="Add icon sp">&nbsp;</span><input name="txtBillAddressLine2" id="txtBillAddressLine2" placeholder="Billing Address Line 2" maxlength="100" type="text"  /></div>
+                    <div class="Errrow" id="txtBillAddressLine2Error"><p class="arrow-down"></p></div>
                     <div class="row">
                        <select name="txtBillCountry" id="txtBillCountry"  onchange="setCountryCode(this)">
                             <option value="" selected="selected">Select Country</option>
@@ -580,7 +580,7 @@
             </div>
             <div class="Payment box">
                 <div class="sdHead w100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment methods</div><div class="gap20px"></div>
-                <div class="payMethod poselc" id="CC" onclick="ShowPaymentOption('CC',this)"><span class="cc icon sp">&nbsp;</span>Credit Card</div>
+                <div class="payMethod poselc" id="CC" onclick="ShowPaymentOption('CC',this)"><span class="cc icon sp">&nbsp;</span><span class="spc50px">&nbsp;</span>Credit Card</div>
                  <div class="payMethodCon db" id="CCContent">
                      <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>
@@ -607,7 +607,7 @@
                          <div class="gap10px"></div>
                     </div>
                 </div>
-                <div class="payMethod" id="DC" onclick="ShowPaymentOption('DC',this)"><span class="cc icon sp">&nbsp;</span>Debit Card</div>
+                <div class="payMethod" id="DC" onclick="ShowPaymentOption('DC',this)"><span class="cc icon sp">&nbsp;</span><span class="spc50px">&nbsp;</span>Debit Card</div>
                  <div class="payMethodCon" id="DCContent">  
                  <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>
@@ -632,20 +632,25 @@
                           <div class="gap10px">
                               <img src="images/visa_logo.png" />
                               <img src="images/mastercard_logo.png" />
+                              <img src="images/MasteroCard_logo.jpg" height="20px" />
+                              <img src="images/rupayCard_Logo.png" height="20px" />
                            </div>
                          <div class="gap10px"></div>
                     </div>
                      </div>
-                <div class="payMethod" id="NB" onclick="ShowPaymentOption('NB',this)"><span class="Netb icon sp">&nbsp;</span>Net Banking</div>
+                <div class="payMethod" id="NB" onclick="ShowPaymentOption('NB',this)"><span class="Netb icon sp">&nbsp;</span><span class="spc50px">&nbsp;</span>Net Banking</div>
                 <div class="payMethodCon" id="NBContent">  
                  <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>
                         <select  name="drpNetBank" id="drpNetBank">
                        <option class="SelectBank" value="" style="display: none;">Select NetBanking</option>
                        <optgroup label="------Popular Banks------"> </optgroup>
-                            <option value="HDFCM_N"> HDFC Bank</option>
-                            <option value="IDEB_N"> ICICI Bank</option>
+                            <option value="HDFCM_N">HDFC Bank</option>
+                            <option value="IDEB_N">ICICI Bank</option>
                             <option value="SBI_N"> State Bank of India</option>
+                            <option value="UTI_N">AXIS Bank</option>
+                            <option value="NKMB_N">Kotak Mahindra Bank</option>
+                            <option value="CBIBAN_N">Citibank Bank Account Online</option>
                             <optgroup label="------All Banks------">
                             </optgroup>
                             <option value="AND_N">Andhra Bank</option>
@@ -678,7 +683,7 @@
                             <option value="JKB_N">Jammu and Kashmir Bank</option>
                             <option value="KTKB_N">Karnataka Bank</option>
                             <option value="KVB_N">Karur Vysya Bank</option>
-                            <option value="NKMB_N">Kotak Mahindra Bank</option>
+                            <option value="NKMB_N">Kotak Mahindra Bank</option>                            
                             <option value="LVB_N">Lakshmi Vilas Bank NetBanking</option>
                             <option value="OBC_N">Oriental Bank of Commerce</option>
                             <option value="PNBCO_N">Punjab National Bank (Corporate)</option>
@@ -689,11 +694,11 @@
                             <option value="SIB_N">South Indian Bank</option>
                             <option value="SCB_N">Standard Chartered Bank</option>
                             <option value="SBJ_N">State Bank of Bikaner and Jaipur</option>
-                            <option value="SBH_N">State Bank of Hyderabad</option>
-                            <option value="SBI_N">State Bank of India</option>
+                            <option value="SBH_N">State Bank of Hyderabad</option>                           
                             <option value="SBM_N">State Bank of Mysore</option>
                             <option value="SBP_N">State Bank of Patiala</option>
                             <option value="SBT_N">State Bank of Travancore</option>
+                             <option value="SBI_N"> State Bank of India</option>
                             <option value="SYNBK_N">Syndicate Bank</option>
                             <option value="TNMB_N">Tamilnad Mercantile Bank</option>
                             <option value="UCO_N">UCO Bank</option>
@@ -707,12 +712,18 @@
                      <span class="pacotext">After clicking on the "PLACE ORDER" button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to Indiaart.com.</span> 
                          <div class="gap10px"></div>
                           <div class="gap10px">
-                              <img src="images/visa_logo.png" />
+                              <img src="images/Icici_Bank_logo.jpg" width="60" />
+                              <img src="images/Hdfc_Bank_logo.jpg" width="60" />
+                              <img src="images/Citi_Bank_logo.jpg" width="60" />
+                              <img src="images/Axis_Bank_logo.jpg" width="60" />
+                              <img src="images/StateBank_Logo.jpg" width="60" />
+                              <img src="images/Kotak_bank_logo.jpg" width="60" />
                           </div>
                          <div class="gap10px"></div>
+                     <div class="gap10px"></div>
                     </div>
                      </div>
-                <div class="payMethod" id="CashCard" onclick="ShowPaymentOption('CashCard',this)"><span class="cc icon sp">&nbsp;</span>Cash Cards</div>
+                <div class="payMethod" id="CashCard" onclick="ShowPaymentOption('CashCard',this)"><span class="cc icon sp">&nbsp;</span><span class="spc50px">&nbsp;</span>Cash Cards</div>
                 <div class="payMethodCon" id="CashCardContent">  
                  <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>
@@ -727,12 +738,13 @@
                      <span class="pacotext">After clicking on the "PLACE ORDER" button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to Indiaart.com.</span> 
                          <div class="gap10px"></div>
                           <div class="gap10px">
-                              <img src="images/visa_logo.png" />
+                            <img src="images/OxiCash_logo.jpg" width="50" />
+                              <img src="images/ICash_logo.jpg" width="50" />
                           </div>
                          <div class="gap10px"></div>
                     </div>
                      </div>
-                <div class="payMethod" id="MP" onclick="ShowPaymentOption('MP',this)"><span class="cc icon sp">&nbsp;</span>Mobile Payments</div>
+                <div class="payMethod" id="MP" onclick="ShowPaymentOption('MP',this)"><span class="cc icon sp">&nbsp;</span><span class="spc50px">&nbsp;</span>Mobile Payments</div>
                 <div class="payMethodCon" id="MPContent">  
                  <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>
@@ -745,35 +757,33 @@
                      <span class="pacotext">After clicking on the "PLACE ORDER" button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to Indiaart.com.</span> 
                          <div class="gap10px"></div>
                           <div class="gap10px">
-                              <img src="images/visa_logo.png" />
+                              <img src="images/paymate_logo_sm.gif" width="60" />
                           </div>
                          <div class="gap10px"></div>
                     </div>
                      </div>
-                <div class="payMethod" id="WA" onclick="ShowPaymentOption('WA',this)"><span class="cc icon sp">&nbsp;</span>Wallet</div>
+                <div class="payMethod" id="WA" onclick="ShowPaymentOption('WA',this)"><span class="cc icon sp">&nbsp;</span><span class="spc50px">&nbsp;</span>Wallet</div>
                 <div class="payMethodCon" id="WAContent">  
                  <div style="margin:0 auto;width:90%">
                      <div class="gap10px"></div>
                      <select name="drpWallet" id="drpWallet">
                        <option selected="" value="">Select Wallet</option>
-                       <option value="JNCS_N">Jana Cash Wallet</option>
+                         <option value="PTM_N">Paytm Wallet</option>
+                         <option value="MOBKP_N">Mobikwik</option>
+                        <option value="JNCS_N">Jana Cash Wallet</option>
                         <option value="RILGP_N">jioMoney</option>
-                        <option value="MOBKP_N">Mobikwik</option>
-                        <option value="PTM_N">Paytm Wallet</option>
 					</select>
                       <div class="gap10px"></div>
                      <span class="pacotext">After clicking on the "PLACE ORDER" button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to Indiaart.com.</span> 
                          <div class="gap10px"></div>
                           <div class="gap10px">
-                              <img src="images/visa_logo.png" />
+                              <img src="images/Paytm_logo.jpg" width="40" />
+                              <img src="images/Mobiwik_Logo.jpg" width="50"  />
                           </div>
                          <div class="gap10px"></div>
                     </div>
                      </div>
-              <!-- <div class="payMethod" id="PayPal"><span class="Payp icon sp">&nbsp;</span>PayPal</div>    -->
-            </div>
-            <div class="Payment box">
-              <div class="sdHead w100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Place Order</div>
+
                 <div class="subtotal">
                     <div class="subtotalCon">
                         <div class="sttext">SUBTOTAL</div>
@@ -788,7 +798,10 @@
                         <input type="submit" id="MakePayment" value="PLACE ORDER" class="placeOrder" />
                     </div>
                 </div>
+  
+
             </div>
+            
         </div>
     </div>
 
